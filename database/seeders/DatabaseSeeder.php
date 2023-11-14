@@ -22,5 +22,9 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create(); //calling the UserFactory for inserting 10 fake user details
         \App\Models\Post::factory(50)->create(); //calling the PostFactory here insertind 50 fale records for user_id->1
         \App\Models\Category::factory(10)->create(); 
+
+        \App\Models\Country::factory(10)->create(); 
+        \App\Models\State::factory(100)->create(); 
+        \App\Models\City::factory(500)->create(); 
     }
 }

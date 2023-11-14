@@ -52,6 +52,7 @@ class User extends Authenticatable
     }
 
     public function contactContactinformation(){
-        return $this->hasOneThrough(Contactinformation::class,contact::class);
+        return $this->hasOneThrough(Contactinformation::class,Contact::class); //hasOneThrough allows you to access the Contactinformation associated with a User without directly having to go through the intermediate Contact model in your code.
+
     }
 }

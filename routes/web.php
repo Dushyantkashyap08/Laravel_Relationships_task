@@ -30,3 +30,6 @@ Route::get('/posttocategories',[TestController::class,'PosttoCategories']);
 
 //has-one-through example route
 Route::get('/has-one-through',[TestController::class,'hasOneThrough']);
+
+//has-many-through example route
+Route::get('/has-many-through',[TestController::class,'hasManyThrough']);
